@@ -1,4 +1,11 @@
 package com.saumya.guessinggame.exception;
 
-public class InvalidInputException {
+/**
+ * Thrown when the user enters invalid input.
+ */
+public class InvalidInputException extends RuntimeException {
+
+    public InvalidInputException(String message) {
+        super(message);
+    }
 }
